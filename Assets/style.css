@@ -55,54 +55,91 @@ h1 {
 
 main {
     display: flex;
-    margin-top: 52px;
+    margin-top: 60px;
     height: 93%;
     background-color: rgb(33, 35, 36);
 }
 
-#badgeContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /*border: 2px solid white;*/
+#mainContainer {
     width: 100%;
-    height: 50%;
-}
-
-.badgeShell {
-    display: flex;
-    /*border: 2px solid #e53a70;*/
-    height: 100%;
-    width: 33%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.badge {
-    display: flex;
     flex-direction: column;
-    background-color: rgb(33, 35, 36);
-    box-shadow: 0px 0px 12px 3px rgba(253, 0, 190, 0.689);
- 
-    height: 320px;
-    width: 225px;
 }
 
-.badgeTop {
+#mainTop {
+    width: 100%;
+    height: 70%;
+}
+
+#personalContainer {
+    flex-direction: column;
     display: flex;
-    height: 20%;
-    background-color: rgb(43, 45, 46);
-
+    height: 100%;
+    width: 75%;
 }
 
-.badgeBottom {
+#personTop {
+    height: 50%;
+    width: 100%;
+}
+
+#profilePicture {
+    display: flex;
+    height: 100%;
+    width: 35%;
+}
+
+#proPic {
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 3px rgba(253, 0, 190, 0.637);
+    margin-top: 1rem;
+    margin-left: 1rem;
     height: 80%;
+    width: 90%;
 }
 
-#headerLI {
-    border: 2px solid white;
+#sumContainer {
+    height: 100%;
+    width: 65%;
+}
+
+#sumText {
+    margin: 1rem;
+    font-style: 1rem;
+    color: white;
+}
+
+#contactContainer {
+    border: 2px solid yellow;
+    height: 100%;
+    width: 25%;
+}
+
+#personBottom {
+    height: 50%;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    width: 55%;
+}
+
+#ghBadgeContainer {
+    border: 2px solid palegoldenrod;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#liBadgeContainer {
+    border: 2px solid white;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainBottom {
+    width: 100%;
+    height: 30%;
 }
 
 footer {
