@@ -40,10 +40,10 @@ body {
 /* Header */
 header {
     background-color: var(--Grey);
-    height: auto;
-    width: 10%;
-    max-width: 5rem;
-    min-width: 4rem;
+    height: 100%;
+    width: 15%;
+    max-width: 10rem;
+    min-width: 5rem;
     z-index: 1;
 }
 
@@ -60,13 +60,20 @@ nav {
 }
 
 /* Main */
+#mainContainer {
+    height: 95%;
+}
+
 main {
     flex-direction: column;
     background-color: var(--GreyT);
-    margin-top: 2rem;
-    margin-right: 5rem;
-    height: 90%;
-    width: 90%;
+    height: auto;
+    width: 85%;
+}
+
+#contactContainer {
+    height: auto;
+    width: 15%;
 }
 
 #mainTop {
@@ -86,7 +93,7 @@ h1 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #proPic{
@@ -138,6 +145,18 @@ a:visited {
     text-decoration: none;
 }
 
+li {
+    font-size: 1rem;
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+#contactInfo {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
 .logo {
     height: 3rem;
 }
@@ -157,8 +176,6 @@ a:visited {
 
 /* Footer */
 footer {
-    height: 10%;
-    max-height: 5rem;
-    min-height: 4rem;
+    height: 5%;
     width: 100%;
 }
