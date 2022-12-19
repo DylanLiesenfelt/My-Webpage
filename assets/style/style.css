@@ -32,7 +32,6 @@ body {
 #bodyContainer {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: auto;
     width: 100%;
 }
@@ -51,6 +50,23 @@ nav {
     width: 90%;
 }
 
+.navBadge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 80%;
+}
+
+#navTop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+}
+
 #neon {
     height: auto;
     width: 10%;
@@ -62,6 +78,7 @@ nav {
 /* Main */
 #mainContainer {
     height: 95%;
+    width: 85%;
 }
 
 main {
@@ -78,6 +95,7 @@ main {
 
 #mainTop {
     height: 40%;
+    justify-content: space-evenly;
     background-color: var(--OffWhite);
 }
 
@@ -96,10 +114,14 @@ h3 {
     font-size: 1.25rem;
 }
 
-#proPic{
+#proPic {
    justify-content: center;
    height: auto;
-   width: 60%;
+   width: 30%;
+}
+
+#pp {
+    border-radius: 50%;
 }
 
 #mainMid {
@@ -136,6 +158,11 @@ h3 {
     
 }
 
+.linkIcon {
+    height: 32px;
+    margin: 0.5rem;
+}
+
 a {
     text-decoration: none;
     
@@ -149,6 +176,13 @@ li {
     font-size: 1rem;
     list-style-type: none;
     margin: 0.5rem;
+}
+
+#contactContainer{
+    margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #contactInfo {
