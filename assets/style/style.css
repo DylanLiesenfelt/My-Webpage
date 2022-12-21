@@ -1,215 +1,101 @@
-/* Globals */
+/* -Globals- */
 * {
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: monospace;
-    color: var(--White);
+    overflow: hidden;
 }
 
 :root {
-    --DarkGrey: rgb(30, 31, 32);
-    --Grey: rgb(44, 45, 46);
-    --GreyT: rgba(255, 255, 255, 0.01);
-    --White: rgba(242, 242, 242, 0.804);
-    --OffWhite: rgba(217, 217, 217, 0.04);
-    --Blue: rgb(23, 131, 255);
-    --LightBlue: rgb(60, 161, 255);
-    
+    --main: rgb(24, 25, 26);
+    --alt: rgb(44, 45, 47);
+    --sec: rgba(255, 255, 255, 0.386);
 }
 
 .container {
     display: flex;
+    align-items: center;
 }
 
-/* Body */
+/* --------------------------------------------------------------------------------------------------- */
+/* -Body- */
 body {
     height: 100vh;
     width: 100%;
-    background-color: var(--DarkGrey);
+    background-color: var(--main);
 }
 
 #bodyContainer {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
-/* Header */
-header {
-    background-color: var(--Grey);
+#mfContainer {
     height: 100%;
-    width: 15%;
-    max-width: 10rem;
-    min-width: 5rem;
-    z-index: 1;
-}
-
-nav {
     width: 90%;
-}
-
-.navBadge {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    width: 80%;
 }
 
-#navTop {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50%;
-    width: 100%;
-}
-
-#neon {
-    height: auto;
-    width: 10%;
-    background-image: linear-gradient(to right, rgb(0, 142, 244), rgba(161, 200, 228, 0.989), rgb(0, 162, 255));
-    box-shadow: 0px 0px 12px 3px rgba(0, 174, 255, 0.741);
-    z-index: 2;
-}
-
-/* Main */
-#mainContainer {
-    height: 95%;
-    width: 85%;
-}
-
-main {
-    flex-direction: column;
-    background-color: var(--GreyT);
-    height: auto;
-    width: 85%;
-}
-
-#contactContainer {
-    height: auto;
-    width: 15%;
-}
-
-#mainTop {
-    height: 40%;
-    justify-content: space-evenly;
-    background-color: var(--OffWhite);
-}
-
-#bio{
-    flex-direction: column  ;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-#proPic {
-   justify-content: center;
-   height: auto;
-   width: 30%;
-}
-
-#pp {
-    border-radius: 50%;
-}
-
-#mainMid {
-    height: 7%;
-    justify-content: space-evenly;
-}
-
-
-#linkContainer {
-    justify-content: space-evenly;
-    margin-top: 1rem;
+/* --------------------------------------------------------------------------------------------------- */
+/* -Header- */
+header {
+    position: sticky;
     height: 100%;
-    width: 50%;
-}
-
-.linkBadge{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    width: 45%;
-    border: 2px solid var(--Blue);
-    border-radius: 1%;
-    box-shadow: 0px 0px 7px 1px rgba(0, 174, 255, 0.741);
-    background-color: var(--GreyT);
+    width: 15%;
+    background-color: var(--alt);
     z-index: 1;
 }
 
-#ghLink {
+#headContainer {
 
 }
 
-#liLink {
-    
+/* Nav */
+nav {
+border: 2px solid yellow;
 }
 
-.linkIcon {
-    height: 32px;
-    margin: 0.5rem;
+#navContainer {
+
 }
 
-a {
-    text-decoration: none;
-    
+/* --------------------------------------------------------------------------------------------------- */
+/* -Main- */
+main {
+    height: 95%;
+    width: 100%;
 }
 
-a:visited {
-    text-decoration: none;
-}
-
-li {
-    font-size: 1rem;
-    list-style-type: none;
-    margin: 0.5rem;
-}
-
-#contactContainer{
-    margin-top: 2rem;
-    align-items: center;
+#mainContainer {
+    border: 2px solid green;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#contactInfo {
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-top: 5rem;
+/* Main Top */
+#mainTop {
+    height: 50%;
+    width: 100%;
+    background-color: var(--sec);
 }
 
-.logo {
-    height: 3rem;
-}
-
+/* Main Bottom */ 
 #mainBottom {
-    height: 53%;
-    justify-content: center;
-    align-items: center;
+    height: 50%;
+    width: 100%;
+
 }
 
-#summaryContainer {
-    align-items: center;
-    font-size: 1.5rem;
-    height: 80%;
-    width: 80%;
-}
-
-/* Footer */
+/* --------------------------------------------------------------------------------------------------- */
+/* -Footer- */
 footer {
+    border: 2px solid red;
     height: 5%;
     width: 100%;
+}
+
+#footContainer {
+
 }
