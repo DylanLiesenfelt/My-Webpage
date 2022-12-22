@@ -3,45 +3,51 @@
     margin: 0;
     border: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 :root {
-    --main: rgb(24, 25, 26);
-    --alt: rgb(44, 45, 47);
-    --sec: rgba(255, 255, 255, 0.386);
+    --main: rgb(35, 35, 35);
+    --alt: rgb(56, 57, 60);
+    --sec: rgb(0, 136, 255);
+    --whiteT: rgba(213, 213, 213, 0.213);
+    --blueT: rgba(124, 194, 255, 0.22);
 }
 
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
 /* -Body- */
 body {
-    height: 100vh;
+    height: 307vh;
     width: 100%;
     background-color: var(--main);
 }
 
 #bodyContainer {
+    align-items: flex-start;
     height: 100%;
     width: 100%;
 }
 
 #mfContainer {
     height: 100%;
-    width: 90%;
+    width: 92%;
     flex-direction: column;
+    background: linear-gradient(to left, #649eca, #e96a6a);
 }
-
 /* --------------------------------------------------------------------------------------------------- */
 /* -Header- */
 header {
     position: sticky;
-    height: 100%;
+    top: 0;
+    height: 100vh;
     width: 15%;
+    max-width: 10rem;
+    min-width: 7rem;
     background-color: var(--alt);
     z-index: 1;
 }
@@ -62,37 +68,59 @@ border: 2px solid yellow;
 /* --------------------------------------------------------------------------------------------------- */
 /* -Main- */
 main {
-    height: 95%;
+    height: 100%;
     width: 100%;
 }
 
 #mainContainer {
-    border: 2px solid green;
     height: 100%;
     width: 100%;
     flex-direction: column;
-    justify-content: flex-start;
+}
+/* -------- Main Containers -------- */
+.content {
+    background-color: var(--whiteT);
+    box-shadow: inset 0 0 100px 20px rgb(255, 255, 255), 10px 2px 10px rgba(0, 0, 0, 0.211);
 }
 
-/* Main Top */
-#mainTop {
-    height: 50%;
+/* Bio */
+#bio {
+    height: 100vh;
     width: 100%;
-    background-color: var(--sec);
 }
 
-/* Main Bottom */ 
-#mainBottom {
-    height: 50%;
-    width: 100%;
+#bioContainer{
+    height: 90%;
+    width: 90%;
+}
 
+/* Project */ 
+#project {
+    height: 100vh;
+    width: 100%;
+}
+
+#projectContainer{
+    height: 90%;
+    width: 90%;
+}
+
+/* Contact */
+#contact {
+    height: 100vh;
+    width: 100%;
+}
+
+#contactContainer{
+    height: 90%;
+    width: 90%;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
 /* -Footer- */
 footer {
     border: 2px solid red;
-    height: 5%;
+    height: 7vh;
     width: 100%;
 }
 
