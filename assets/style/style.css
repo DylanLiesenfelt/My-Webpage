@@ -3,13 +3,14 @@
     margin: 0;
     border: 0;
     padding: 0;
+    font-family: monospace;
 }
 
 :root {
     --main: rgb(35, 35, 35);
     --alt: rgb(56, 57, 60);
     --sec: rgb(0, 136, 255);
-    --whiteT: rgba(213, 213, 213, 0.213);
+    --whiteT: rgba(149, 172, 176, 0.213);
     --blueT: rgba(124, 194, 255, 0.22);
 }
 
@@ -92,6 +93,42 @@ main {
 #bioContainer{
     height: 90%;
     width: 90%;
+}
+
+#bioTop {
+    height: 50%;
+    width: 100%;
+    
+}
+
+#titleContainer {
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#heroContainer {
+    height: 100%;
+    width: 50%;
+    align-items: flex-end;
+}
+
+#hero { 
+    width: 60%;
+}
+
+#bioBottom {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Project */ 
