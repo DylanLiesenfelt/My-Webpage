@@ -47,23 +47,63 @@ header {
     top: 0;
     height: 100vh;
     width: 15%;
-    max-width: 10rem;
+    max-width: 13rem;
     min-width: 7rem;
     background-color: var(--alt);
     z-index: 1;
 }
 
 #headContainer {
-
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 /* Nav */
 nav {
-border: 2px solid yellow;
+height: 100%;
+width: 90%;
 }
 
-#navContainer {
+#navBar {
+    height: 100%;
+    width: 100%;
+}
 
+#linkContainer {
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.iconWrap {
+    display: flex;
+    width: 90%;
+    height: 16%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+:hover.iconWrap {
+    box-shadow: inset 0 0 10px 5px #2c97e8bf;
+    border-radius: 5px;
+}
+
+.icon {
+    height: 50%;
+} 
+
+#neon{
+    background-color: #e96a6a;
+    background-image: linear-gradient(to left, #ff0000, white, #ff0000);
+    height: 100%;
+    width: 10%;
+    box-shadow: 0 0 30px 2px #ff0000;
+    z-index: 2;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
